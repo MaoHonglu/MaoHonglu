@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>编辑_教师</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/fenye.css">
+		<link rel="stylesheet" type="text/css" href="../css/edit_common.css">
+		<script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="../js/edit_index.js"></script>
+    
+		<style>
+		.edit_passage_page{width:1100px; margin:0 auto;}
+		.edit_passage_page input{
+			width: 200px;
+			box-shadow: 1px 2px 1px #d1d1d1 inset;
+			height: 25px;
+			font-size: 14px;
+			padding: 5px 10px;
+			border: 1px solid #d1d1d1;
+			border-radius: 10px;
+			margin:0 auto;
+			margin-top:20px;
+			}
+	.edit_passage_page .cnTitle {
+		text-align:center;
+		line-height: 65px;
+		color: #434343;
+		font-size: 18px;
+		font-weight: bold;
+		height: 65px;
+		background:rgb(234,241,255);
+		}
+	.edit_passage_page form{margin:0 auto; margin-bottom:20px; padding-bottom:10px;}
+	.edit_passage_page .teacher_list{margin:10px 0;width:300px;display:inline-block;}
+	.teacher_work{display:inline-block; width:200px;}
+	.edit_passage_page .info__list{width:200px; margin-top:0px;}
+	.edit_passage_page.info__list > p{line-height:15px;}
+	.edit_passage_page .teacher_intro{margin:0 auto; margin-bottom:20px; font-size:18px; border:#CCC thin solid;}
+	.edit_passage_page .teacher_img{display:inline-block;}
+	.edit_passage_page .preview{background: linear-gradient(to bottom, #bafd7d, #A0D91E); margin-left:50px;}
+	.edit_passage_page .publish{background:url(../img/submitBtn.png); background-size:cover; float:right; margin-right:50px;}
+	.edit_passage_page .preview,.publish{border-radius:10px;; width:100px; height:40px; border:#999;cursor:pointer;}
+	.edit_passage_page .faculty__notice::after {
+			margin: 25px auto;
+			content: '';
+			display: block;
+			width: 100%;
+			height: 2px;
+			background-color: #c4d3d4;
+	}
+		</style>
+</head>
+<body>
+<div class="edit_passage_page">
+	<div class="cnTitle">编辑教师信息</div>
+	<form action="" method="post">
+	<div align="center";>
+		<div class="teacher_img" onclick="upFile('page')"><img src="../img/picdemo.jpg" width="200px" /></div>
+		<div class="teacher_list">
+			<input name="title" type="text" placeholder="老师姓名" /><br>
+			<input name="title" type="text" placeholder="性别" /><br>
+			<input name="title" type="text" placeholder="教师职称" /><br>
+			<input name="title" type="text" placeholder="研究方向" />
+		</div>
+		<div class="teacher_work">
+			<select>
+				<option id="faculty__desc-btn" selected onClick="displayInPage(this,'faculty__desc')">教授委员会</option>
+				<option onclick="displayInPage(this,'faculty__org')" id="faculty__org-btn">院领导</option>
+				<option onclick="displayInPage(this,'faculty__leader')" id="faculty__leader-btn">学生管理</option>
+				<option onclick="displayInPage(this,'faculty__professor')" id="faculty__professor-btn">教学办</option>
+				<option onclick="displayInPage(this,'faculty__office')" id="faculty__office-btn">行政办</option>
+				<option onclick="displayInPage(this,'faculty__xueke')" id="faculty__xueke-btn">研究生办</option>
+				<option onclick="displayInPage(this,'faculty__computer')" id="faculty__computer-btn">计算机系</option>
+				<option onclick="displayInPage(this,'faculty__authorization')" id="faculty__authorization-btn">自动化系</option>
+				<option onclick="displayInPage(this,'faculty__contact')" id="faculty__contact-btn">通信系</option>
+				<option onclick="displayInPage(this,'faculty__party')" id="faculty__party-btn">党总支</option>
+				<option onclick="displayInPage(this,'faculty__youth')" id="faculty__youth-btn">团总支</option>
+			</select>
+			<div class="info__list" id="faculty__desc" style="display:block;">
+				<p id="zhuren">主任</p>
+				<p>副主任</p>
+				<p>委员</p>
+				<p>秘书</p>
+			</div>
+			<div class="info__list" id="faculty__org" style="display: none;">
+				<p>院长</p>
+				<p>书记</p>
+				<p>副院长</p>
+				<p>副书记</p>
+			</div>
+			<div class="info__list" id="faculty__party" style="display: none;">
+				<p>党总支书记</p>
+				<p>党总支副书记</p>	
+				<p>纪检委员</p>
+				<p>统战委员</p>
+				<p>文体委员</p>
+				<p>教工党支部书记</p>
+				<p>学生党支部书记</p>
+			</div>
+			<div class="info__list" id="faculty__youth" style="display: none;">
+				<p>团总支书记</p>
+				<p>团总支副书记</p>	
+				<p>宣传委员</p>
+				<p>组织委员</p>
+			</div>
+		</div>
+	</div>
+	<div class=" faculty__notice"></div>		
+	<div class="teacher_intro">
+			2010年毕业于北京科技大学，并取得计算机专业工学博士学位；2005-2006年就职于曙光信息信息产业（北京）有限公司； 2005年毕业于大连海事大学，并取得计算机专业工学硕士学位。
+社会兼职：本人在云计算、分布式计算、Web信息处理方面具有坚实的理论基础和多年的实践经验，曾先后作为APSCC、ICINIS和ICINA等国际学术会议特约审稿专家、Session Chair等职务。
+科研与教改项目：曾先后主持或参与过国家科技支撑计划课题3项，国家新闻出版总署重大重点课题1项，省部级项目2项（主持国家民委信息中心科研项目1项，教育部重点项目1项），中央民族大学重大孵化科研项目2项，自主科研青年基金项目2项，国家语言资源监测与研究中心开发课题2项，校级优秀课程建设1项。
+科研与教学成果：共发表科研学术论文20篇（已被EI检索12篇），其中以第一作者名义发表被国际期刊录用2篇，美国《工程索引》（EI）收录5篇，出版学术专著、教材各1部，参与申报软件专利2项，软件著作权5项
+	</div>
+	<button class="preview"  type="reset" >重置</button>
+	<button class="publish" type="submit">发布</button>
+	</form>
+</div>
+
+<script>
+	function displayInPage(btn,idName){
+	var displayBlock = $('#'+idName);
+	if(displayBlock.css("display")!="block"){
+		$('.info__list').css("display","none");
+		displayBlock.css("display","block");
+		}
+}
+</script>
+<!--图文展示样式-->
+<div class="parentBox margin-auto" id="upBox_page" style="display: none;">
+	<div class="pbTitle">
+		<span class="pbtName fl">图片展示</span>
+		<span onclick="closeBox('page')" class="pbtClose fr"></span>
+	</div>
+	<div class="pbContent bd-t-gray-2 bd-b-gray-2">
+		<div class="pbcLeft fl">
+			<div onclick="upFile('page')"><img src="../img/picdemo.jpg" width="200px" /></div>
+			<span>建议尺寸 1920*350</span>
+		</div>
+			<div class="pbcRight fr">
+					<form enctype="multipart/form-data" action="" method="post" id="page">
+							<br />
+							<input name="title" type="text" placeholder="填写名称" />
+							<br />
+							<br />
+							<br />
+							<hr width="250px"/>
+							<br />
+							<br />
+							<input hidden="true" type="file" name="file" id="upfile_page" />
+							<input hidden="true" name="which" id="upnum_page" />
+							<input type="text" name="link" placeholder="输入跳转页面" />
+							<br />
+					</form>
+			</div>
+	</div>
+	<div class="pbFooter">
+			<div onclick="closeBox('page')" class="cancelBtn fl">取&nbsp;&nbsp;消</div>
+			<div onclick="$('#page').submit();" class="submitBtn fr">确&nbsp;&nbsp;定</div>
+	</div>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>院系风采</title>
+    <link rel="stylesheet" type="text/css" href="./../css/common.css">
+    <link rel="stylesheet" type="text/css" href="./../css/fenye.css">
+    <style type="text/css">
+        body{
+            background-color: rgb(241,241,241);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="imgmore-pannel">
+        <!--院系风采-->
+        <div class="info__list">
+            <div class="info__title imgmore-pannel-title">
+                <h4 id="panneltitle">院系风采</h4>
+            </div>
+            <!--图片所在的地方-->
+            <div class="news__content">
+                <!--js自动加载-->
+                <div class="colpics col1" id="col0">
+                    <img data-action="zoom" width="267" src="./../img/fengcai1.jpg">
+                    <img data-action="zoom" width="267" src="./../img/fengcai1.jpg">
+                    <img data-action="zoom" width="267" src="./../img/fengcai1.jpg">
+                    <img data-action="zoom" width="267" src="./../img/fengcai1.jpg">
+                </div>
+                <div class="colpics col2" id="col1">
+                    <img data-action="zoom" width="267" src="./../img/fengcai2.jpg">
+                    <img data-action="zoom" width="267" src="./../img/fengcai2.jpg">
+                    <img data-action="zoom" width="267" src="./../img/fengcai2.jpg">
+                    <img data-action="zoom" width="267" src="./../img/fengcai2.jpg">
+                </div>
+                <div class="colpics" id="col2">
+                    <img data-action="zoom" width="267" src="./../img/fengcai3.jpg">
+                    <img data-action="zoom" width="267" src="./../img/fengcai3.jpg">
+                    <img data-action="zoom" width="267" src="./../img/fengcai3.jpg">
+                    <img data-action="zoom" width="267" src="./../img/fengcai3.jpg">
+                </div>
+                <div id="more" style="clear:both;"></div>
+                <p id="load" style="padding: 20px;font-size: 15px;text-align: center;display: none;">加载中...</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="./../js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="./../js/zoom.js"></script>
+<script type="text/javascript">
+var stop = true;
+var page = 1;
+$(window).scroll(function(event) {
+    var totalHeight = $(window).scrollTop() + $(window).height();
+    if (totalHeight >= $(document).height()) {
+        if (stop) {
+            stop = false;
+            $("#load").css('display', 'block');
+            $.get('/Index/loadFengcai.html?type=pic&page=' + page, function(data) {
+                page++;
+                if (data.count == 0) {
+                    $("#load").text('没有更多了');
+                    $("#load").css('display', 'block');
+                } else {
+                    for (var i = 0; i < data.count; i++) {
+                        var content = '<img data-action="zoom" src="/Public/' + data.photo[i].picture_uri + '" width="267" />';
+                        $('#col' + (i % 3)).append(content);
+                    }
+                    stop = true;
+                }
+            });
+        }
+    }
+});
+</script>
+
+</html>

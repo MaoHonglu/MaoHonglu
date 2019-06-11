@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>管理员登录</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/login.css">
+
+</head>
+
+<body>
+    <div class="main-pannel">
+        <div class="img-pannel">
+            <div class="logo-pannel">
+                <img src="./icons/logo-round.png">
+            </div>
+            <p>信息工程学院</p>
+            <p>网站后台登录系统</p>
+        </div>
+        <div class="login-pannel">
+            <div class="login-pannel-header">
+                <h4>管理员登录</h4>
+            </div>
+            <div class="hrline" ></div>
+            <div class="login-pannel-body">
+                <!-- 登录表单 -->
+                <form action="" id="liveMessage" method="post">
+                    <div class="username-input">
+                        <img src="./icons/admin.png" alt="用户名">
+                        <input type="text" name="login-user" placeholder="用户名" id="username">
+                    </div>
+                    <div class="password-input">
+                        <img src="./icons/password.png" alt="密码">
+                        <input type="password" name="login-user-password" placeholder="密码" id="userpassword">
+                    </div>
+                    <div class="code-input">
+                        <img src="./icons/vcode.png" alt="验证码">
+                        <input type="text" name="login-user-code" id="inputCode" placeholder="验证码">
+                    </div>
+                        <img src="http://uyghur.muc.edu.cn/Index/verifyCOde.html" onclick="this.src='http://uyghur.muc.edu.cn/Index/verifyCOde.html'+'?'+Math.random()" width="120px" height="42px" class="verifycode">
+                    <div class="login-button-input">
+                        <button onclick="validate('http://uyghur.muc.edu.cn/Index/checkVerify.html')" type="submit">登录</button>
+                    </div>
+                </form>
+            </div>
+            <div class="hrline"></div>
+            <div class="login-pannel-footer">
+                <p>Copyright(C) 中央民族大学信息工程学院</p>
+                <p>All rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="./js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="./js/login.js"></script>
+</html>

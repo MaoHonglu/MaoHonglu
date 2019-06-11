@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>新闻</title>
+    <link rel="stylesheet" type="text/css" href="./../css/common.css">
+    <link rel="stylesheet" type="text/css" href="./../css/fenye.css">
+    <style type="text/css">
+        body{
+            background-color: rgb(241,241,241);
+        }
+    </style>
+</head>
+
+<body>
+        <div class="newsmore-pannel">
+            <!--更多新闻-->
+            <div class="info__list">
+                <div class="info__title  newsmore-pannel-title">
+                    <h4 id="panneltitle">科研课题</h4>
+                </div>
+                <div class="news__content">
+                    <ul>
+                        <li><span class="news__title"><a href="javascript:void(0)">潘光旦：做学问要一点一点日积月累</a></span><span class="news__date">[2017/10/03]</span></li>
+                        <li><span class="news__title"><a href="javascript:void(0)">潘光旦：做学问要一点一点日积月累</a></span><span class="news__date">[2017/10/03]</span></li>
+                        <li><span class="news__title"><a href="javascript:void(0)">潘光旦：做学问要一点一点日积月累</a></span><span class="news__date">[2017/10/03]</span></li>
+                        <li><span class="news__title"><a href="javascript:void(0)">潘光旦：做学问要一点一点日积月累</a></span><span class="news__date">[2017/10/03]</span></li>
+                        <li><span class="news__title"><a href="javascript:void(0)">潘光旦：做学问要一点一点日积月累</a></span><span class="news__date">[2017/10/03]</span></li>
+                        <li><span class="news__title"><a href="javascript:void(0)">潘光旦：做学问要一点一点日积月累</a></span><span class="news__date">[2017/10/03]</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</body>
+<script type="text/javascript">
+
+    /*获得URL相应的参数*/
+    function GetQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null)
+            return unescape(r[2]);
+        return null;
+    }
+
+    //获取新闻列表id
+    var pannelTitle=document.getElementById("panneltitle");
+    var newType = GetQueryString("newstype");
+    
+    if(newType=="faculty__news")
+        pannelTitle.innerHTML="学院新闻";
+    else if(newType=="faculty__notice")
+        pannelTitle.innerHTML="通知公告";
+    else if(newType=="faculty__science")
+        pannelTitle.innerHTML="科研教学";
+    else if(newType=="faculty__education")
+        pannelTitle.innerHTML="教务动态";
+    else if(newType=="faculty__party")
+        pannelTitle.innerHTML="党团活动";
+    else if(newType=="faculty__show")
+        pannelTitle.innerHTML="学院风采";
+    else
+        pannelTitle.innerHTML="更多新闻";
+
+</script>
+</html>

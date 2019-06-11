@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>中央民族大学 | 党委组织部</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+    /*css reset*/
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-size: 14px;
+    }
+    a,p{
+        color: #505050;
+    }
+    p{
+        font-size: 1em
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    .wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .logo-link {
+        display: inline-block;
+        height: 50px;
+    }
+    .header .navbar-default {
+        border: 0;
+        margin-bottom: 0;
+        border-bottom: 2px solid #0ba1e4;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .img-pannel .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+        /*max-height: 400px;*/
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+    
+    .floatleft {
+        float: left;
+    }
+    
+    .floatright {
+        float: right;
+    }
+    
+    .tit {
+        border-bottom: 3px solid #D20505;
+        padding-bottom: 10px;
+    }
+    .tit a{
+        color: #505050;
+    }
+    .tit span {
+        color: #DB0505;
+        font-size: 18px;
+        padding-left: 7px;
+    }
+    
+    .con {
+        padding: 5px 0;
+    }
+    
+    .con ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    
+    .list li {
+        line-height: 38px;
+        padding-top: 5px;
+        border-bottom: 1px solid #DDDDDD;
+        position: relative;
+    }
+    .list li a{
+        color: #505050;
+    }
+    
+    .list li:last-child {
+        border-bottom: none;
+    }
+    
+    .list li span {
+        position: absolute;
+        right: 0;
+        top: 3px;
+        color: #777777;
+    }
+    
+    .ellipsis {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-right: 70px;
+    }
+    
+    .navbar-form {
+        position: relative;
+    }
+    
+    .header .navbar-default .navbar-header {
+        margin-right: 10px;
+    }
+    
+    .search-button {
+        border: none;
+        height: 30px;
+        width: 30px;
+        background-image: url(./icons/search.png);
+        position: absolute;
+        top: 2px;
+        right: 20px;
+    }
+
+    .footer{
+        height: 80px;
+        background-color: #F0F0F0;
+        text-align: center;
+    }
+    .footer__copyright{
+        height:80px;
+        padding-top: 15px;
+    }
+    
+    @media (min-width: 768px) {
+        .header .navbar-default {
+            border-radius: 0;
+            padding: 15px 0;
+        }
+        .logo-img {
+            margin-top: 12px;
+            margin-left: 12px;
+            max-width: 120px;
+        }
+        .navbar-nav {
+            margin-right: 7px;
+        }
+    }
+    
+    @media (min-width: 768px) and (max-width: 930px) {
+        .navbar-nav li a {
+            padding-left: 7px;
+            padding-right: 7px;
+        }
+        .navbar-form {
+            margin-right:-50px;
+            padding-left: 0px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .navbar-brand {
+            padding: 0;
+        }
+        .logo-img {
+            margin-top: 12px;
+            margin-left: 12px;
+            height: 25px;
+        }
+        .header .navbar-default .navbar-toggle {
+            margin-right: 0;
+        }
+        .search-button {
+            top: 12px;
+        }
+        .ellipsis {
+        padding-right: 0;
+    }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="nav navbar-default" role="navgation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a href="#" class="logo-link">
+                            <img src="img/logo.jpg" class="logo-img" alt="中央民族大学党委组织部">
+                        </a>
+                        <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <div class="navbar-form navbar-right">
+                            <form class="form-inline">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="" placeholder="请输入搜索内容">
+                                </div>
+                                <button type="submit" class="btn btn-default search-button"></button>
+                            </form>
+                        </div>
+                        <ul class="navbar-nav nav">
+                            <li><a href="#">首页</a></li>
+                            <li><a href="#">党建工作</a></li>
+                            <li><a href="#">干部工作</a></li>
+                            <li><a href="#">党校工作</a></li>
+                            <li><a href="#">下载中心</a></li>
+                            <li><a href="#">关于我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <body>
+            <div class="img-pannel">
+                <div class="container-fluid">
+                    <img src="img/img-pannel.jpg" width="100%" alt="认真学习贯彻十九大精神">
+                </div>
+            </div>
+            <div class="content-pannel">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-lg-6">
+                            <div class="box">
+                                <div class="tit"><span>通知公告</span><em class="em1"><img src="images/dot05.png"></em><a href="http://www.muc.edu.cn/zt/list138_138.html" class="floatright">更多>></a></div>
+                                <div class="con">
+                                    <ul class="list">
+                                        <li>
+                                            <h6 class="ellipsis"><a href="http://www.muc.edu.cn/content/details_138_2005.html" target="_blank">“要深刻认识学习宣传贯彻党的十九大精神的重大意义，要迅速掀起学习宣传贯彻党的十九大精神的热潮”</a></h6><span class="floatright hidden-xs">2017/11/01</span>
+                                            <h6 class="news-date visible-xs">2017/11/01</h6>
+                                            </li>
+                                        <li>
+                                            <h6 class="ellipsis"><a href="http://www.muc.edu.cn/content/details_138_2004.html" target="_blank">“研究要服务于国家战略，尤其是民族地区的发展战略”</a></h6><span class="floatright hidden-xs">2017/11/01</span>
+                                             <h6 class="news-date visible-xs">2017/11/01</h6>
+                                            </li>
+                                        <li>
+                                            <h6 class="ellipsis"><a href="http://www.muc.edu.cn/content/details_138_2003.html" target="_blank">最关注的是“铸牢中华民族共同体意识”</a></h6><span class="floatright hidden-xs">2017/11/01</span>
+                                             <h6 class="news-date visible-xs">2017/11/01</h6>
+                                            </li>
+                                        <li>
+                                            <h6 class="ellipsis"><a href="http://www.muc.edu.cn/content/details_138_2002.html" target="_blank">“应该站在一个新的境界、新的起点、新的舞台上去面对未来”</a></h6><span class="floatright hidden-xs">2017/11/01</span>
+                                             <h6 class="news-date visible-xs">2017/11/01</h6>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-6">
+                            <div class="box">
+                                <div class="tit"><span>党建工作</span><em class="em1"><img src="images/dot05.png"></em><a href="http://www.muc.edu.cn/zt/list138_138.html" class="floatright">更多>></a></div>
+                                <div class="con">
+                                    <ul class="list">
+                                        <li>
+                                            <h6 class="ellipsis"><a href="http://www.muc.edu.cn/content/details_138_2005.html" target="_blank">“要深刻认识学习宣传贯彻党的十九大精神的重大意义，要迅速掀起学习宣传贯彻党的十九大精神的热潮”</a></h6><span class="floatright hidden-xs">2017/11/01</span>
+                                            <h6 class="news-date visible-xs">2017/11/01</h6>
+                                            </li>
+                                        <li>
+                                            <h6 class="ellipsis"><a href="http://www.muc.edu.cn/content/details_138_2004.html" target="_blank">“研究要服务于国家战略，尤其是民族地区的发展战略”</a></h6><span class="floatright hidden-xs">2017/11/01</span>
+                                             <h6 class="news-date visible-xs">2017/11/01</h6>
+                                            </li>
+                                        <li>
+                                            <h6 class="ellipsis"><a href="http://www.muc.edu.cn/content/details_138_2003.html" target="_blank">最关注的是“铸牢中华民族共同体意识”</a></h6><span class="floatright hidden-xs">2017/11/01</span>
+                                             <h6 class="news-date visible-xs">2017/11/01</h6>
+                                            </li>
+                                        <li>
+                                            <h6 class="ellipsis"><a href="http://www.muc.edu.cn/content/details_138_2002.html" target="_blank">“应该站在一个新的境界、新的起点、新的舞台上去面对未来”</a></h6><span class="floatright hidden-xs">2017/11/01</span>
+                                             <h6 class="news-date visible-xs">2017/11/01</h6>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-6">
+                            <div class="box">
+                                <div class="tit"><span>干部工作</span><a href="http://www.muc.edu.cn/zt/list138_138.html" class="floatright">更多>></a></div>
+                                <div class="con">
+                                    <ul class="list">
+                                        <li>
+                                            <h6 class="ellipsis"><a href="http://www.muc.edu.cn/content/details_138_2005.html" target="_blank">“要深刻认识学习宣传贯彻党的十九大精神的重大意义，要迅速掀起学习宣传贯彻党的十九大精神的热潮”</a></h6><span class="floatright hidden-xs">2017/11/01</span>
+                                            <h6 class="news-date visible-xs">2017/11/01</h6>
+                                            </li>
+                                        <li>
+                                            <h6 class="ellipsis"><a href="http://www.muc.edu.cn/content/details_138_2004.html" target="_blank">“研究要服务于国家战略，尤其是民族地区的发展战略”</a></h6><span class="floatright hidden-xs">2017/11/01</span>
+                                             <h6 class="news-date visible-xs">2017/11/01</h6>
+                                            </li>
+                                        <li>
+                                            <h6 class="ellipsis"><a href="http://www.muc.edu.cn/content/details_138_2003.html" target="_blank">最关注的是“铸牢中华民族共同体意识”</a></h6><span class="floatright hidden-xs">2017/11/01</span>
+                                             <h6 class="news-date visible-xs">2017/11/01</h6>
+                                            </li>
+                                        <li>
+                                            <h6 class="ellipsis"><a href="http://www.muc.edu.cn/content/details_138_2002.html" target="_blank">“应该站在一个新的境界、新的起点、新的舞台上去面对未来”</a></h6><span class="floatright hidden-xs">2017/11/01</span>
+                                             <h6 class="news-date visible-xs">2017/11/01</h6>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-6">
+                            <div class="box">
+                                <div class="tit"><span>党校工作</span><em class="em1"><img src="images/dot05.png"></em><a href="http://www.muc.edu.cn/zt/list138_138.html" class="floatright">更多>></a></div>
+                                <div class="con">
+                                    <ul class="list">
+                                        <li>
+                                            <h6 class="ellipsis"><a href="http://www.muc.edu.cn/content/details_138_2005.html" target="_blank">“要深刻认识学习宣传贯彻党的十九大精神的重大意义，要迅速掀起学习宣传贯彻党的十九大精神的热潮”</a></h6><span class="floatright hidden-xs">2017/11/01</span>
+                                            <h6 class="news-date visible-xs">2017/11/01</h6>
+                                            </li>
+                                        <li>
+                                            <h6 class="ellipsis"><a href="http://www.muc.edu.cn/content/details_138_2004.html" target="_blank">“研究要服务于国家战略，尤其是民族地区的发展战略”</a></h6><span class="floatright hidden-xs">2017/11/01</span>
+                                             <h6 class="news-date visible-xs">2017/11/01</h6>
+                                            </li>
+                                        <li>
+                                            <h6 class="ellipsis"><a href="http://www.muc.edu.cn/content/details_138_2003.html" target="_blank">最关注的是“铸牢中华民族共同体意识”</a></h6><span class="floatright hidden-xs">2017/11/01</span>
+                                             <h6 class="news-date visible-xs">2017/11/01</h6>
+                                            </li>
+                                        <li>
+                                            <h6 class="ellipsis"><a href="http://www.muc.edu.cn/content/details_138_2002.html" target="_blank">“应该站在一个新的境界、新的起点、新的舞台上去面对未来”</a></h6><span class="floatright hidden-xs">2017/11/01</span>
+                                             <h6 class="news-date visible-xs">2017/11/01</h6>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+        <footer class="footer">
+            <div class="footer__copyright">
+                <p>Copyright@2007-2017中央民族大学党委组织部 All Rights Reserved</p>
+                <p>电话：028-85405391 传真：028-85404055 部长信箱：zzb@scu.edu.cn</p>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/jquery-3.2.1.js"></script>
+    <script src="./js/bootstrap.js"></script>
+</body>
+
+</html>

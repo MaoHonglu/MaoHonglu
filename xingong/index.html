@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+</head>
+
+<body>
+    <header>
+        <div class="header__wrap">
+            <div class="header__logo">
+            </div>
+            <div class="header__search">
+                <p>English Version
+                </p>
+                <form action="" method="post">
+                    <input type="text" name="" placeholder="&nbsp;&nbsp;输入要搜索的内容" class="content__button">
+                    <input type="submit" name="" class="search__button" value="">
+                </form>
+            </div>
+            <div class="header__nav">
+                <ul>
+                    <li class="nav__item drop-nav__item">
+                        <a href="javascript:void(0)" class="header__nav-item header__nav-item_status_active" id="nav__item-1" data-active="active">网站首页</a>
+                    </li>
+                    <li class="nav__item drop-nav__item">
+                        <a href="./faculty/faculty_info.html" class="header__nav-item" id="nav__item-2">学院概况</a>
+                        <div class="level-2 Layer-2" id="subNav2">
+                            <ul>
+                                <a href="./faculty/faculty_info.html?jumpid=faculty__desc" class="no-drop">学院简介</a>
+                                <a href="./faculty/faculty_info.html?jumpid=faculty__org" class="drop-level-3">机构设置</a>
+                                <a href="./faculty/faculty_info.html?jumpid=faculty__leader" class="no-drop">党政领导</a>
+                                <a href="./faculty/faculty_info.html?jumpid=faculty__xueke" class="no-drop">学科简介</a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item drop-nav__item">
+                        <a href="./teacher/teacher_info.html" class="header__nav-item" id="nav__item-3">师资队伍</a>
+                        <div class="level-2 Layer-3" id="subNav3">
+                            <ul>
+                                <a href="./teacher/teacher_info.html?jumpid=teacher__desc">师资概况</a>
+                                <a href="./teacher/teacher_info.html?jumpid=faculty__teacher">学院教师</a>
+                                <a href="./teacher/teacher_info.html?jumpid=teacher__show">教师风采</a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item drop-nav__item">
+                        <a href="./education/education_info.html" class="header__nav-item" id="nav__item-4">教育教学</a>
+                        <div class="level-2 Layer-4" id="subNav4">
+                            <ul>
+                                <a href="./education/education_info.html?jumpid=undergraduate__education" style="width: 80px">本科生教学</a>
+                                <a href="./education/education_info.html?jumpid=postgraduate__education" style="width: 80px">研究生教学</a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item drop-nav__item">
+                        <a href="./party/party_info.html" class="header__nav-item" id="nav__item-5">党团建设</a>
+                        <div class="level-2 Layer-5" id="subNav5">
+                            <ul>
+                                <a href="./party/party_info.html?jumpid=party__branch" style="width: 50px">党委</a>
+                                <a href="./party/party_info.html?jumpid=youth__branch" style="width: 50px">团委</a>
+                                <a href="./party/party_info.html?jumpid=party__train">分党校</a>
+                                <a href="./party/party_info.html?jumpid=theory__study">理论学习</a>
+                                <a href="./party/party_info.html?jumpid=chuangxian__zhengyou">两学一做</a>
+                                <a href="./party/party_info.html?jumpid=party__life">支部生活</a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item drop-nav__item">
+                        <a href="./science/science_info.html" class="header__nav-item" id="nav__item-6">学术科研</a>
+                        <div class="level-2 Layer-6" id="subNav6">
+                            <ul>
+                                <a href="./science/science_info.html?jumpid=science__projects">科研课题</a>
+                                <a href="./science/science_info.html?jumpid=science__book">科研著作</a>
+                                <a href="./science/science_info.html?jumpid=science__thesis">科研论文</a>
+                                <a href="./science/science_info.html?jumpid=science__<title></title>">获奖题目</a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item drop-nav__item">
+                        <a href="./student/student_info.html" class="header__nav-item" id="nav__item-7">学生工作</a>
+                        <div class="level-2 Layer-7" id="subNav7">
+                            <ul>
+                                <a href="./student/student_info.html?jumpid=student__org">学生组织</a>
+                                <a href="./student/student_info.html?jumpid=student__org-activity">课外活动</a>
+                                <a href="./student/student_info.html?jumpid=student__competition">竞技比赛</a>
+                                <a href="./student/student_info.html?jumpid=student__embody">社会实践</a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item drop-nav__item">
+                        <a href="./job/job_info.html" class="header__nav-item" id="nav__item-8">招生就业</a>
+                        <div class="level-2 Layer-8" id="subNav8">
+                            <ul>
+                                <a href="./job/job_info.html?jumpid=undergraduate" style="width: 80px">本科生招生</a>
+                                <a href="./job/job_info.html?jumpid=postgraduate" style="width: 80px">研究生招生</a>
+                                <a href="./job/job_info.html?jumpid=advertise__news">招聘信息</a>
+                                <a href="./job/job_info.html?jumpid=job__guide">就业指导</a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item drop-nav__item">
+                        <a href="./download/download_info.html" class="header__nav-item" id="nav__item-9">下载中心</a>
+                    </li>
+                    <div class="header__nav-item-tip"></div>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- 轮播图 -->
+    <div id="wrapper">
+        <div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <a href="javascript:void(0)" onclick="opennews('./news/news_show.html')">
+                    <img src="img/slide1.png" data-thumb="img/slide1.png" alt="" />
+                </a>
+                <!-- <a href="http://dev7studios.com"><img src="img/up.jpg" data-thumb="img/up.jpg" alt="" title="This is an example of a caption" /></a> -->
+                <a href="javascript:void(0)" onclick="opennews('./news/news_show.html')">
+                    <img src="img/slide2.png" data-thumb="img/slide2.png" alt="" />
+                </a>
+                <a href="javascript:void(0)" onclick="opennews('./news/news_show.html')">
+                    <img src="img/slide1.png" data-thumb="img/slide1.png" alt="" />
+                </a>
+                <a href="javascript:void(0)" onclick="opennews('./news/news_show.html')">
+                    <img src="img/slide2.png" data-thumb="img/slide2.png" alt="" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <!--学院新闻-->
+        <div class="news">
+            <div class="faculty__news">
+                <div>学院新闻</div>
+                <a href="javascript:void(0)" class="more" onclick="openwin('./news/news_more.html','faculty__news')">
+                更多>></a>
+            </div>
+            <div class="news__content">
+                <ul>
+                    <li class="li1 news__item news__item-active">
+                        <div class="img__fold">
+                            <a href="javascript:void(0)" onclick="opennews('./news/news_show.html')">
+                                <img src="./img/news1.png" width="130px" height="150px">
+                            </a>
+                            <div class="news__time"><span class="year-month">2017/9</span><span class="day">20</span></div>
+                        </div>
+                        <div class="content__unfold">
+                            <dl>
+                                <dt>习近平会见全国社会治安综合表彰大会</dt>
+                                <dd>使用语音外呼的模式将指定的语音呼入至接听人，可通过这种方式为针对性的客户提供会议通知、活动通知，并可通过API接口程序化控制呼出时间、呼出效果反馈</dd>
+                                <a href="javascript:void(0)" onclick="opennews('./news/news_show.html')" class="news__detail">详细内容 ></a>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="li2 news__item">
+                        <div class="img__fold">
+                            <a href="javascript:void(0)" onclick="opennews('./news/news_show.html')">
+                                <img src="./img/news1.png" width="130px" height="150px">
+                            </a>
+                            <div class="news__time"><span class="year-month">2017/9</span><span class="day">20</span></div>
+                        </div>
+                        <div class="content__unfold">
+                            <dl>
+                                <dt>习近平会见全国社会治安综合表彰大会</dt>
+                                <dd>使用语音外呼的模式将指定的语音呼入至接听人，可通过这种方式为针对性的客户提供会议通知、活动通知，并可通过API接口程序化控制呼出时间、呼出效果反馈</dd>
+                                <a href="javascript:void(0)" onclick="opennews('./news/news_show.html')" class="news__detail">详细内容 ></a>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="li2 news__item">
+                        <div class="img__fold">
+                            <a href="javascript:void(0)" onclick="opennews('./news/news_show.html')">
+                                <img src="./img/news1.png" width="130px" height="150px">
+                            </a>
+                            <div class="news__time"><span class="year-month">2017/9</span><span class="day">20</span></div>
+                        </div>
+                        <div class="content__unfold">
+                            <dl>
+                                <dt>习近平会见全国社会治安综合表彰大会</dt>
+                                <dd>使用语音外呼的模式将指定的语音呼入至接听人，可通过这种方式为针对性的客户提供会议通知、活动通知，并可通过API接口程序化控制呼出时间、呼出效果反馈</dd>
+                                <a href="javascript:void(0)" onclick="opennews('./news/news_show.html')" class="news__detail">详细内容 ></a>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="li2 news__item">
+                        <div class="img__fold">
+                            <a href="javascript:void(0)" onclick="opennews('./news/news_show.html')">
+                                <img src="./img/news1.png" width="130px" height="150px">
+                            </a>
+                            <div class="news__time"><span class="year-month">2017/9</span><span class="day">20</span></div>
+                        </div>
+                        <div class="content__unfold">
+                            <dl>
+                                <dt>习近平会见全国社会治安综合表彰大会</dt>
+                                <dd>使用语音外呼的模式将指定的语音呼入至接听人，可通过这种方式为针对性的客户提供会议通知、活动通知，并可通过API接口程序化控制呼出时间、呼出效果反馈</dd>
+                                <a href="javascript:void(0)" onclick="opennews('./news/news_show.html')" class="news__detail">详细内容 ></a>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="li2 news__item">
+                        <div class="img__fold">
+                            <a href="javascript:void(0)" onclick="opennews('./news/news_show.html')">
+                                <img src="./img/news1.png" width="130px" height="150px">
+                            </a>
+                            <div class="news__time"><span class="year-month">2017/9</span><span class="day">20</span></div>
+                        </div>
+                        <div class="content__unfold">
+                            <dl>
+                                <dt>习近平会见全国社会治安综合表彰大会纹得得</dt>
+                                <dd>使用语音外呼的模式将指定的语音呼入至接听人，可通过这种方式为针对性的客户提供会议通知、活动通知，并可通过API接口程序化控制呼出时间、呼出效果反馈</dd>
+                                <a href="javascript:void(0)" onclick="opennews('./news/news_show.html')" class="news__detail">详细内容 ></a>
+                            </dl>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--通知公告-->
+        <div class="notice">
+            <div class="faculty__notice">
+                <div>通知公告</div>
+                <a href="javascript:void(0)" class="more" onclick="openwin('./news/news_more.html','faculty__notice')">
+                更多>></a>
+            </div>
+            <div class="notice__content">
+                <ul>
+                    <li><span class="notice__title"><a href="javascript:void(0)" onclick="opennews('./news/news_show.html')">潘光旦：做学问要一点一点日积月累</a></span><span class="notice__date">[2017/10/03]</span></li>
+                    <li><span class="notice__title"><a href="javascript:void(0)" onclick="opennews('./news/news_show.html')">潘光旦：做学问要一点一点日积月累</a></span><span class="notice__date">[2017/10/03]</span></li>
+                    <li><span class="notice__title"><a href="javascript:void(0)" onclick="opennews('./news/news_show.html')">潘光旦：做学问要一点一点日积月累</a></span><span class="notice__date">[2017/10/03]</span></li>
+                    <li><span class="notice__title"><a href="javascript:void(0)" onclick="opennews('./news/news_show.html')">潘光旦：做学问要一点一点日积月累</a></span><span class="notice__date">[2017/10/03]</span></li>
+                </ul>
+            </div>
+        </div>
+        <!--科研教学-->
+        <div class="science">
+            <div class="faculty__science">
+                <div>科研教学</div>
+                <a href="javascript:void(0)" class="more" onclick="openwin('./news/news_more.html','faculty__science')">
+                更多>></a>
+            </div>
+            <div class="science__content">
+                <ul>
+                    <li><span class="science__title"><a href="javascript:void(0)" onclick="opennews('./news/news_show.html')">潘光旦：做学问要一点一点日积月累</a></span><span class="science__date">[2017/10/03]</span></li>
+                    <li><span class="science__title"><a href="javascript:void(0)" onclick="opennews('./news/news_show.html')">潘光旦：做学问要一点一点日积月累</a></span><span class="science__date">[2017/10/03]</span></li>
+                    <li><span class="science__title"><a href="javascript:void(0)" onclick="opennews('./news/news_show.html')">潘光旦：做学问要一点一点日积月累</a></span><span class="science__date">[2017/10/03]</span></li>
+                    <li><span class="science__title"><a href="javascript:void(0)" onclick="opennews('./news/news_show.html')">潘光旦：做学问要一点一点日积月累</a></span><span class="science__date">[2017/10/03]</span></li>
+                    <li><span class="science__title"><a href="javascript:void(0)" onclick="opennews('./news/news_show.html')">潘光旦：做学问要一点一点日积月累</a></span><span class="science__date">[2017/10/03]</span></li>
+                    <li><span class="science__title"><a href="javascript:void(0)" onclick="opennews('./news/news_show.html')">潘光旦：做学问要一点一点日积月累</a></span><span class="science__date">[2017/10/03]</span></li>
+                </ul>
+            </div>
+        </div>
+        <!--教务动态-->
+        <div class="education">
+            <div class="faculty__education">
+                <div>教务动态</div>
+                <a href="javascript:void(0)" class="more" onclick="openwin('./news/news_more.html','faculty__education')">
+                更多>></a>
+            </div>
+            <div class="education__content">
+                <ul>
+                    <li><span class="education__title"><a href="javascript:void(0)" onclick="opennews('./news/news_show.html')">潘光旦：做学问要一点一点日积月累</a></span><span class="education__date">[2017/10/03]</span></li>
+                    <li><span class="education__title"><a href="javascript:void(0)" onclick="opennews('./news/news_show.html')">潘光旦：做学问要一点一点日积月累</a></span><span class="education__date">[2017/10/03]</span></li>
+                    <li><span class="education__title"><a href="javascript:void(0)" onclick="opennews('./news/news_show.html')">潘光旦：做学问要一点一点日积月累</a></span><span class="education__date">[2017/10/03]</span></li>
+                </ul>
+            </div>
+        </div>
+        <!--党团活动-->
+        <div class="party">
+            <div class="faculty__party">
+                <div>党团活动</div>
+                <a href="javascript:void(0)" class="more" onclick="openwin('./news/news_more.html','faculty__party')">
+                更多>></a>
+            </div>
+            <div class="party__content">
+                <ul>
+                    <li><span class="party__title"><a href="javascript:void(0)" onclick="opennews('./news/news_show.html')">潘光旦：做学问要一点一点日积月累</a></span><span class="party__date">[2017/10/03]</span></li>
+                    <li><span class="party__title"><a href="javascript:void(0)" onclick="opennews('./news/news_show.html')">潘光旦：做学问要一点一点日积月累</a></span><span class="party__date">[2017/10/03]</span></li>
+                </ul>
+            </div>
+        </div>
+        <!--学院风采-->
+        <div class="show">
+            <div class="faculty__show">
+                <div>学院风采</div>
+                <a href="javascript:void(0)" class="more" onclick="window.open('./news/img_more.html','newWindow','toolbar=no,location=yes,resizable=yes, height=800, width=900,,scrollbars=yes ,left=380,top=100');">
+                更多>></a>
+            </div>
+            <!--图片滚动展示-->
+            <div class="scroll">
+                <div class="img-scroll bd">
+                    <ul class="picList">
+                        <li class="scroll-item">
+                            <div class="img-item">
+                                <a href="javascript:void(0)"><img alt="01" src="./img/01.jpg" width="150px" height="100px"> </a>
+                            </div>
+                        </li>
+                        <li class="scroll-item">
+                            <div class="img-item">
+                                <a href="javascript:void(0)"><img alt="02" src="./img/02.jpg" width="150px" height="100px"> </a>
+                            </div>
+                        </li>
+                        <li class="scroll-item">
+                            <div class="img-item">
+                                <a href="javascript:void(0)"><img alt="03" src="./img/03.jpg" width="150px" height="100px"> </a>
+                            </div>
+                        </li>
+                        <li class="scroll-item">
+                            <div class="img-item">
+                                <a href="javascript:void(0)"><img alt="04" src="./img/04.jpg" width="150px" height="100px"> </a>
+                            </div>
+                        </li>
+                        <li class="scroll-item">
+                            <div class="img-item">
+                                <a href="javascript:void(0)"><img alt="05" src="./img/05.jpg" width="150px" height="100px"> </a>
+                            </div>
+                        </li>
+                        <li class="scroll-item">
+                            <div class="img-item">
+                                <a href="javascript:void(0)"><img alt="06" src="./img/06.jpg" width="150px" height="100px"> </a>
+                            </div>
+                        </li>
+                        <li class="scroll-item">
+                            <div class="img-item">
+                                <a href="javascript:void(0)"><img alt="06" src="./img/06.jpg" width="150px" height="100px"> </a>
+                            </div>
+                        </li>
+                        <li class="scroll-item">
+                            <div class="img-item">
+                                <a href="javascript:void(0)"><img alt="06" src="./img/06.jpg" width="150px" height="100px"> </a>
+                            </div>
+                        </li>
+                        <li class="scroll-item">
+                            <div class="img-item">
+                                <a href="javascript:void(0)"><img alt="06" src="./img/06.jpg" width="150px" height="100px"> </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hd">
+                    <a class="prev" href="javascript:void(0)"></a>
+                    <a class="next" href="javascript:void(0)"></a>
+                    <div>
+                    </div>
+                    <!-- /featured -->
+                </div>
+                <!-- /featurecontainer -->
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer__link">
+            <a href="javascript:void(0)" class="contactus">联系我们</a>
+            <a href="javascript:void(0)" class="organization">行政机构</a>
+            <a href="javascript:void(0)" class="faculty-guide">院系入口</a>
+            <a href="javascript:void(0)" class="schoolwebsite">校内网站</a>
+            <a href="javascript:void(0)" class="friendlink">友情链接</a>
+        </div>
+        <div class="footer__copyright">
+            <p>Copyright@2007-2017中央民族大学信息工程学院 All Rights Reserved</p>
+            <p>地址：中关村南大街27号 中央民族大学 理工楼 邮编：100081
+                <a href="./login.html"><img src="./icons/admin.png" width="20px" height="20px" style="vertical-align: bottom;"></a>
+            </p>
+        </div>
+        <!--模态框-->
+        <div>
+            <!--联系我们-->
+            <div id="HBox1" style="display: none;">
+                <div class="content-box" id="modal-content">
+                    <h4>联系我们</h4>
+                    <div class="content-table">
+                        <ul>
+                            <li>
+                                <a style="width: 50px"><img src="./icons/number.png" height="38px"></a>
+                                <a style="width: 100px;text-align:center">教学办公室</a>
+                                <a>18008882516</a>
+                            </li>
+                            <li>
+                                <a style="width: 50px"><img src="./icons/number.png" height="38px"></a>
+                                <a style="width: 100px;text-align:center">学生工作办公室</a>
+                                <a>18008882516</a>
+                            </li>
+                            <li>
+                                <a style="width: 50px"><img src="./icons/fax.png" height="38px"></a>
+                                <a style="width: 100px;text-align:center">院系传真</a>
+                                <a>18008882516</a>
+                            </li>
+                            <li>
+                                <a style="width: 50px"><img src="./icons/mail.png" height="38px"></a>
+                                <a style="width: 100px;text-align:center">院系邮箱</a>
+                                <a>18008882516@163.com</a>
+                            </li>
+                            <li>
+                                <a style="width: 50px"><img src="./icons/location.png" height="38px"></a>
+                                <a style="width: 100px;text-align:center">学校地址</a>
+                                <a>北京市海淀区中关村南大街27号</a>
+                            </li>
+                            <li>
+                                <a style="width: 50px"><img src="./icons/mailcode.png" height="38px"></a>
+                                <a style="width: 100px;text-align:center">邮政编码</a>
+                                <a>100081</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--行政机构-->
+            <div id="HBox2" style="display: none;">
+                <div class="link-box">
+                    <h4>行政机构</h4>
+                    <div class="link-table">
+                        <ul>
+                            <li>
+                                <a>西南民族大学</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--院系入口-->
+            <div id="HBox3" style="display: none;">
+                <div class="link-box">
+                    <h4>院系入口</h4>
+                    <div class="link-table">
+                        <ul>
+                            <li>
+                                <a>西南民族大学</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--校内网站-->
+            <div id="HBox4" style="display: none;">
+                <div class="link-box">
+                    <h4>校内网站</h4>
+                    <div class="link-table">
+                        <ul>
+                            <li>
+                                <a>西南民族大学</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--友情链接-->
+            <div id="HBox5" style="display: none;">
+                <div class="link-box">
+                    <h4>友情链接</h4>
+                    <div class="link-table">
+                        <ul>
+                            <li>
+                                <a>西南民族大学</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="./js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="./js/jquery.nivo.slider.js"></script>
+<script type="text/javascript" src="./js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+<script type="text/javascript">
+$('#slider').nivoSlider({
+    effect: 'sliceDownRight', // 过渡效果  
+    slices: 15, // 切片效果时的数量  
+    boxCols: 8, // 格子效果时的列数  
+    boxRows: 4, // 格式效果时的行数  
+    animSpeed: 300, // 图片过渡时间  
+    pauseTime: 2500, // 图片显示时间  
+    startSlide: 0, // 从第几张图片开始（第一张为）  
+    directionNav: true, // 是否显示图片方向切换按钮（上一页/下一页）  
+    controlNav: true, // 是否显示图片导航控制按钮（,2,3... ）  
+    controlNavThumbs: false, // 是否使用图片的缩略图做为导航控制按钮  
+    pauseOnHover: true, // 鼠标县浮时是否停止动画  
+    manualAdvance: false, // 是否手动切换  
+    prevText: 'Prev', // 上一页方向切换按钮的显示文本  
+    nextText: 'Next', // 下一页方向切换按钮的显示文本  
+    randomStart: false, // 开始图片是否随机  
+    beforeChange: function() {}, // 图片切换前触发函数  
+    afterChange: function() {}, // 图片切换后触发函数  
+    slideshowEnd: function() {}, // 在所有图片显示完毕后触发函数  
+    lastSlide: function() {}, // 在最后一张图片显示完毕后触发函数  
+    afterLoad: function() {} // 图片加载完毕后触发函数  
+});
+jQuery(".scroll").slide({
+    mainCell: ".bd ul",
+    autoPage: true,
+    effect: "leftMarquee",
+    autoPlay: true,
+    vis: 6,
+    trigger: "mouseover",
+    interTime: "30",
+    pnLoop: "false"
+});
+
+//学院新闻概述格式化
+$('.content__unfold dl dd').each(function(){
+    $(this).text($(this).find('p').eq(0).text().trim());
+});
+
+</script>
+
+</html>

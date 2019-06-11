@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>更多新闻</title>
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+		<link rel="stylesheet" type="text/css" href="./css/edit_common.css">
+    <script type="text/javascript" src="./js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="./js/jquery.nivo.slider.js"></script>
+    <script type="text/javascript" src="./js/jquery.SuperSlide.2.1.1.js"></script>
+		<script type="text/javascript" src="./js/edit_index.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header__wrap">
+            <div class="header__logo">
+            </div>
+            <div class="header__search">
+                <p>English Version
+                </p>
+                <form action="" method="post">
+                    <input type="text" name="" placeholder="&nbsp;&nbsp;输入要搜索的内容" class="content__button">
+                    <input type="submit" name="" class="search__button" value="">
+                </form>
+            </div>
+            <div class="header__nav">
+                <ul>
+                    <li class="nav__item drop-nav__item">
+                        <a href="javascript:void(0)" class="header__nav-item header__nav-item_status_active" id="nav__item-1" data-active="active">网站首页</a>
+                    </li>
+                    <li class="nav__item drop-nav__item">
+                        <a href="./faculty/faculty_info.html" class="header__nav-item" id="nav__item-2">学院概况</a>
+                        <div class="level-2 Layer-2" id="subNav2">
+                            <ul>
+                                <a href="./faculty/faculty_info.html?jumpid=faculty__desc" class="no-drop">学院简介</a>
+                                <a href="./faculty/faculty_info.html?jumpid=faculty__org" class="drop-level-3">机构设置</a>
+                                <a href="./faculty/faculty_info.html?jumpid=faculty__leader" class="no-drop">党政领导</a>
+                                <a href="./faculty/faculty_info.html?jumpid=faculty__xueke" class="no-drop">学科简介</a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item drop-nav__item">
+                        <a href="./teacher/teacher_info.html" class="header__nav-item" id="nav__item-3">师资队伍</a>
+                        <div class="level-2 Layer-3" id="subNav3">
+                            <ul>
+                                <a href="./teacher/teacher_info.html?jumpid=teacher__desc">师资概况</a>
+                                <a href="./teacher/teacher_info.html?jumpid=faculty__teacher">学院教师</a>
+                                <a href="./teacher/teacher_info.html?jumpid=teacher__show">教师风采</a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item drop-nav__item">
+                        <a href="./education/education_info.html" class="header__nav-item" id="nav__item-4">教育教学</a>
+                        <div class="level-2 Layer-4" id="subNav4">
+                            <ul>
+                                <a href="./education/education_info.html?jumpid=undergraduate__education" style="width: 80px">本科生教学</a>
+                                <a href="./education/education_info.html?jumpid=postgraduate__education" style="width: 80px">研究生教学</a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item drop-nav__item">
+                        <a href="./party/party_info.html" class="header__nav-item" id="nav__item-5">党团建设</a>
+                        <div class="level-2 Layer-5" id="subNav5">
+                            <ul>
+                                <a href="./party/party_info.html?jumpid=party__branch" style="width: 50px">党委</a>
+                                <a href="./party/party_info.html?jumpid=youth__branch" style="width: 50px">团委</a>
+                                <a href="./party/party_info.html?jumpid=party__train">分党校</a>
+                                <a href="./party/party_info.html?jumpid=theory__study">理论学习</a>
+                                <a href="./party/party_info.html?jumpid=chuangxian__zhengyou">两学一做</a>
+                                <a href="./party/party_info.html?jumpid=party__life">支部生活</a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item drop-nav__item">
+                        <a href="./science/science_info.html" class="header__nav-item" id="nav__item-6">学术科研</a>
+                        <div class="level-2 Layer-6" id="subNav6">
+                            <ul>
+                                <a href="./science/science_info.html?jumpid=science__projects">科研课题</a>
+                                <a href="./science/science_info.html?jumpid=science__book">科研著作</a>
+                                <a href="./science/science_info.html?jumpid=science__thesis">科研论文</a>
+                                <a href="./science/science_info.html?jumpid=science__title">获奖题目</a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item drop-nav__item">
+                        <a href="./student/student_info.html" class="header__nav-item" id="nav__item-7">学生工作</a>
+                        <div class="level-2 Layer-7" id="subNav7">
+                            <ul>
+                                <a href="./student/student_info.html?jumpid=student__org">学生组织</a>
+                                <a href="./student/student_info.html?jumpid=student__org-activity">课外活动</a>
+                                <a href="./student/student_info.html?jumpid=student__competition">竞技比赛</a>
+                                <a href="./student/student_info.html?jumpid=student__embody">社会实践</a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item drop-nav__item">
+                        <a href="./job/job_info.html" class="header__nav-item" id="nav__item-8">招生就业</a>
+                        <div class="level-2 Layer-8" id="subNav8">
+                            <ul>
+                                <a href="./job/job_info.html?jumpid=undergraduate" style="width: 80px">本科生招生</a>
+                                <a href="./job/job_info.html?jumpid=postgraduate" style="width: 80px">研究生招生</a>
+                                <a href="./job/job_info.html?jumpid=advertise__news">招聘信息</a>
+                                <a href="./job/job_info.html?jumpid=job__guide">就业指导</a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item drop-nav__item">
+                        <a href="./download/download_info.html" class="header__nav-item" id="nav__item-9">下载中心</a>
+                    </li>
+                    <div class="header__nav-item-tip"></div>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <!--学院新闻-->
+        <div class="news" style="margin-top:40px;">
+					<div class="faculty__news">
+						<div>学院新闻<img class="faculty__news_add" onclick="editArticle('edit_passage.html','学院新闻')" src="./icons/edit.gif" /></div>
+					</div>
+				<div class="news_content">
+					<ul>
+						<li class="fl box-pic bd">
+							<p style="height: 7px;"></p>
+							<p class="big-number">1</p>
+							<p class="button cur-p" onclick="editArticle('xueyuanxinwen.html','学院新闻1')">编辑新闻</p>
+						</li>
+						<li class="fl box-pic bd">
+							<p style="height: 7px;"></p>
+							<p class="big-number">2</p>
+							<p class="button cur-p" onclick="editArticle('xueyuanxinwen.html','学院新闻2')">编辑新闻</p>
+						</li>
+						<li class="fl box-pic bd">
+							<p style="height: 7px;"></p>
+							<p class="big-number">3</p>
+							<p class="button cur-p" onclick="editArticle('xueyuanxinwen.html','学院新闻3')">编辑新闻</p>
+						</li>
+						<li class="fl box-pic bd">
+							<p style="height: 7px;"></p>
+							<p class="big-number">4</p>
+							<p class="button cur-p" onclick="editArticle('xueyuanxinwen.html','学院新闻4')">编辑新闻</p>
+						</li>
+						<li class="fl box-pic bd">
+							<p style="height: 7px;"></p>
+							<p class="big-number">5</p>
+							<p class="button cur-p" onclick="editArticle('xueyuanxinwen.html','学院新闻5')">编辑新闻</p>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="notice__content" style="width:95%;">
+						 <ul>
+									<li><span class="notice__title"><a>潘光旦：做学问要一点一点日积月累</a></span><span class="science__date">[2017/10/03]</span><span class="notice__delete"><a href="javascript:void(0);">[删除]</a></span></li>
+									<li><span class="notice__title"><a>潘光旦：做学问要一点一点日积月累</a></span><span class="science__date">[2017/10/03]</span><span class="notice__delete"><a href="javascript:void(0);">[删除]</a></span></li>
+									<li><span class="notice__title"><a>潘光旦：做学问要一点一点日积月累</a></span><span class="science__date">[2017/10/03]</span><span class="notice__delete"><a href="javascript:void(0);">[删除]</a></span></li>
+									<li><span class="notice__title"><a>潘光旦：做学问要一点一点日积月累</a></span><span class="science__date">[2017/10/03]</span><span class="notice__delete"><a href="javascript:void(0);">[删除]</a></span></li>
+									<li><span class="notice__title"><a>潘光旦：做学问要一点一点日积月累</a></span><span class="science__date">[2017/10/03]</span><span class="notice__delete"><a href="javascript:void(0);">[删除]</a></span></li>
+									<li><span class="notice__title"><a>潘光旦：做学问要一点一点日积月累</a></span><span class="science__date">[2017/10/03]</span><span class="notice__delete"><a href="javascript:void(0);">[删除]</a></span></li>
+							</ul>
+					</div>
+      </div>
+    </div>
+		
+    <footer>
+        <div class="footer__link">
+            <a href="javascript:void(0)" class="contactus">联系我们</a>
+            <a href="javascript:void(0)" class="organization">行政机构</a>
+            <a href="javascript:void(0)" class="faculty-guide">院系入口</a>
+            <a href="javascript:void(0)" class="schoolwebsite">校内网站</a>
+            <a href="javascript:void(0)" class="friendlink">友情链接</a>
+        </div>
+        <div class="footer__copyright">
+            <p>Copyright@2007-2014中央民族大学信息工程学院 All Rights Reserved</p>
+            <p>地址：中关村南大街27号 中央民族大学 理工楼 邮编：100081
+                <a href="javascript:void(0)"><img src="./icons/admin.png" width="20px" height="20px" style="vertical-align: bottom;"></a>
+            </p>
+        </div>
+        <!--模态框-->
+        <div>
+            <div id="HBox" style="display: none;">
+                <div class="content-box" id="modal-content">
+                    <h4>联系我们</h4>
+                    <div class="content-table">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td style="width: 10%"><img src="./icons/number.png" height="38px"></td>
+                                    <td style="width: 20%">系办公室</td>
+                                    <td style="width: 70%">18008882516</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 10%"><img src="./icons/number.png" height="38px"></td>
+                                    <td style="width: 20%">教学办公室</td>
+                                    <td style="width: 70%">18008882516</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 10%"><img src="./icons/number.png" height="38px"></td>
+                                    <td style="width: 20%">学工办公室</td>
+                                    <td style="width: 70%">18008882516</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 10%"><img src="./icons/fax.png" height="38px"></td>
+                                    <td style="width: 20%">院系传真</td>
+                                    <td style="width: 70%">18008882516</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 10%"><img src="./icons/mail.png" height="38px"></td>
+                                    <td style="width: 20%">院系邮箱</td>
+                                    <td style="width: 70%">18008882516@163.com</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 10%"><img src="./icons/location.png" height="38px"></td>
+                                    <td style="width: 20%">学校地址</td>
+                                    <td style="width: 70%">北京市海淀区中关村南大街27号</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 10%"><img src="./icons/mailcode.png" height="38px"></td>
+                                    <td style="width: 20%">邮政编码</td>
+                                    <td style="width: 70%">100081</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="HBox2" style="display: none;">
+                <div class="link-box">
+                    <h4>友情链接</h4>
+                    <div class="link-table">
+                        <table cellspacing="20">
+                            <tbody>
+                                <tr>
+                                    <td><a href="javascript:void(0)">西南民族大学</a></td>
+                                    <td><a href="javascript:void(0)">北方民族大学</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="javascript:void(0)">西南民族大学</a></td>
+                                    <td><a href="javascript:void(0)">北方民族大学</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="javascript:void(0)">西南民族大学</a></td>
+                                    <td><a href="javascript:void(0)">北方民族大学</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="HBox3" style="display: none;">
+                <div class="link-box">
+                    <h4>友情链接</h4>
+                    <div class="link-table">
+                        <table cellspacing="20">
+                            <tbody>
+                                <tr>
+                                    <td><a href="javascript:void(0)">西南民族大学</a></td>
+                                    <td><a href="javascript:void(0)">北方民族大学</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="javascript:void(0)">西南民族大学</a></td>
+                                    <td><a href="javascript:void(0)">北方民族大学</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="javascript:void(0)">西南民族大学</a></td>
+                                    <td><a href="javascript:void(0)">北方民族大学</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="HBox4" style="display: none;">
+                <div class="link-box">
+                    <h4>友情链接</h4>
+                    <div class="link-table">
+                        <table cellspacing="20">
+                            <tbody>
+                                <tr>
+                                    <td><a href="javascript:void(0)">西南民族大学</a></td>
+                                    <td><a href="javascript:void(0)">北方民族大学</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="javascript:void(0)">西南民族大学</a></td>
+                                    <td><a href="javascript:void(0)">北方民族大学</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="javascript:void(0)">西南民族大学</a></td>
+                                    <td><a href="javascript:void(0)">北方民族大学</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="HBox5" style="display: none;">
+                <div class="link-box">
+                    <h4>友情链接</h4>
+                    <div class="link-table">
+                        <table cellspacing="20">
+                            <tbody>
+                                <tr>
+                                    <td><a href="javascript:void(0)">西南民族大学</a></td>
+                                    <td><a href="javascript:void(0)">北方民族大学</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="javascript:void(0)">西南民族大学</a></td>
+                                    <td><a href="javascript:void(0)">北方民族大学</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="javascript:void(0)">西南民族大学</a></td>
+                                    <td><a href="javascript:void(0)">北方民族大学</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+		<!--轮播图-->
+<div class="parentBox margin-auto" id="upBox_carousel" style="display: none; top: 50px;">
+    <div class="pbTitle">
+        <span class="pbtName fl">轮播图设置</span>
+        <span onclick="closeBox('carousel')" class="pbtClose fr"></span>
+    </div>
+    <div class="pbContent bd-t-gray-2 bd-b-gray-2">
+        <div class="pbcLeft fl">
+            <div onclick="upFile('carousel')"><img src="./img/picdemo.jpg" width="200px"></div>
+            <span>建议尺寸 1920*350</span>
+        </div>
+        <div class="pbcRight fr">
+            <form enctype="multipart/form-data" action="/tp/admin.php/Index/upCarousel.html" method="post" id="carousel">
+                <br>
+                <input name="title" placeholder="填写名称" type="text">
+                <br>
+                <br>
+                <br>
+                <br>
+                <input name="file" id="upfile_carousel" type="file" hidden="true">
+                <input name="which" id="upnum_carousel" hidden="true">
+                <input name="link" placeholder="输入跳转页面" type="text">
+                <br>
+            </form>
+        </div>
+    </div>
+    <div class="pbFooter">
+        <div onclick="closeBox('carousel')" class="cancelBtn fl">取&nbsp;&nbsp;消</div>
+        <div onclick="$('#carousel').submit();" class="submitBtn fr">确&nbsp;&nbsp;定</div>
+    </div>
+</div>
+
+<!--院系风采-->
+<div class="parentBox margin-auto"  id="upBox_fl" style="display: none; top:50px;">
+    <div class="pbTitle">
+        <span class="pbtName fl">院系风采</span>
+        <span class="pbtClose fr" onclick="closeBox('fl')"></span>
+    </div>
+    <div class="pbContent bd-t-gray-2 bd-b-gray-2">
+        <div class="pbcLeft fl">
+            <div onclick="upFile('fl')"><img src="./img/picdemo.jpg" width="200px" /></div>
+            <span>建议尺寸 900*不限</span>
+        </div>
+        <div class="pbcRight">
+            <form enctype="multipart/form-data" action="" method="post" id="fl">
+                <input hidden="true" name="which" id="upnum_fl" />
+                <input hidden="true" type="file" onchange="addFiles('#upfile_fl')" multiple name="paper[]" id="upfile_fl" />
+            </form>
+						已经选择<span id="num_fl">0</span>张
+        </div>
+    </div>
+    <div class="pbFooter">
+        <div onclick="closeBox('fl')" class="cancelBtn fl">取&nbsp;&nbsp;消</div>
+        <div onclick="$('#fl').submit();" class="submitBtn fr">确&nbsp;&nbsp;定</div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="./js/common.js"></script>
+</html>

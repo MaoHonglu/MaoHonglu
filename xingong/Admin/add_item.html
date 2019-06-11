@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>添加项目</title>
+	<link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+	<link rel="stylesheet" type="text/css" href="./css/edit_common.css">
+    <script type="text/javascript" src="./js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="./js/jquery.nivo.slider.js"></script>
+    <script type="text/javascript" src="./js/jquery.SuperSlide.2.1.1.js"></script>
+	<script type="text/javascript" src="./js/edit_index.js"></script>
+	<style type="text/css">
+.content-box {
+    background-color: rgb(224, 246, 255);
+    width: 520px;
+    height: 360px;
+}
+
+.content-box h4 {
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    color: rgb(89, 87, 87);
+}
+
+.content-box .content-table {
+    margin: 0 auto;
+    width: 98%;
+    height: 88%;
+    background-color: #fff;
+    color: rgb(89, 87, 87);
+}
+
+.content-box .content-table ul li a{
+    display:inline-block;
+    border-left: 1px solid #ebebeb;
+}
+.content-box .content-table ul li a img{
+    vertical-align: middle;
+}
+.content-box .content-table ul li{
+    height: 49px;
+    border: 1px solid #ebebeb;
+    border-right: none;
+    line-height: 49px;
+}
+
+.content-box .content-table ul li a:last-child {
+    padding-left: 30px;
+    text-align: left;
+}
+
+.content-box .content-table ul li:last-child a {
+    border-bottom: none;
+}
+
+.content-box .content-table ul li:first-child a {
+    border-top: none;
+}
+
+.link-box {
+    background-color: rgb(224, 246, 255);
+    width: 520px;
+    height: 350px;
+    overflow-x:hidden;
+    overflow-y:auto; 
+    position: relative;
+}
+
+.link-box h4 {
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    color: rgb(89, 87, 87);
+}
+
+.link-box .link-table {
+    margin: 0 auto;
+    width: 98%;
+    height: 88%;
+    background-color: #fff;
+    color: rgb(89, 87, 87);
+    text-align: center;
+}
+
+.link-box .link-table ul {
+    width: 100%;
+    padding-top: 20px;
+    background-color: #FFF;
+}
+
+.link-box .link-table ul li a{
+    background-color: rgb(229, 229, 229);
+    height: 24px;
+}
+.link-box .link-table ul li{
+    line-height: 24px;
+    display: inline-block;
+    width: 45%;
+    height: 24px;
+    margin:8px 0;
+    cursor: pointer;
+    
+}
+/*HBOX6*/
+.content-box .additem-table{
+    height: 75%;
+}
+.additem-content{
+    width: 350px;
+    height: 185px;
+}
+.content-box .content-table ul li input{
+    font-size: 16px;
+    width: 214px;
+    height: 25px;
+    outline: none;
+    border: 1px solid #D3D3D3;
+    text-indent: 1em;
+    border-radius: 5px;
+}
+.additem-content .additem-table ul li:last-child{
+    border-bottom: none;
+    border-left: none;
+}
+li .submitBtn{
+    width: 150px;
+    height: 20px;
+    line-height: 25px;
+    background-color: #EAF1FF;
+    margin-top: -14px;
+    transition: .5s;
+}
+li .submitBtn:hover{
+    background-color: #87CEFA;
+}
+
+.link-box a.add_item_img{
+    position: absolute;
+    top: 11px;
+    left: 306px;
+    width: 20px;
+}
+.link-box .link-table ul li a.item-delete{
+    padding: 0;
+    margin:0;
+    color: #f00;
+    border:none;
+    background:none;
+}
+
+</style>
+<script type="text/javascript">
+
+</script>
+
+</head>
+<body>
+	
+    
+    <!--行政机构-->
+    <div id="HBox2" style="display: none;">
+                <div class="link-box">
+                    <h4>行政机构</h4>
+                    <a class="add_item_img" href="javascript:void(0)"><img src="./icons/add_item.png" width="20px"></a>
+                    <div class="link-table">
+                        <ul>
+                            <li>
+                                <a>西南民族大学</a>
+                                <a class="item-delete">X</a>
+
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                                <a class="item-delete">X</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                                <a class="item-delete">X</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                                <a class="item-delete">X</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    </div>
+    <!--院系入口-->
+    <div id="HBox3" style="display: none;">
+                <div class="link-box">
+                    <h4>院系入口</h4>
+                    <a class="add_item_img" href="javascript:void(0)"><img src="./icons/add_item.png" width="20px"></a>
+                    <div class="link-table">
+                        <ul>
+                            <li>
+                                <a>西南民族大学</a>
+                                <a class="item-delete">X</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                                <a class="item-delete">X</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                                <a class="item-delete">X</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                                <a class="item-delete">X</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    </div>
+    <!--校内网站-->
+    <div id="HBox4" style="display: none;">
+                <div class="link-box">
+                    <h4>校内网站</h4>
+                    <a class="add_item_img" href="javascript:void(0)"><img src="./icons/add_item.png" width="20px"></a>
+                    <div class="link-table">
+                        <ul>
+                            <li>
+                                <a>西南民族大学</a>
+                                <a class="item-delete">X</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                                <a class="item-delete">X</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                                <a class="item-delete">X</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                                <a class="item-delete">X</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    </div>
+    <!--友情链接-->
+    <div id="HBox5" style="display: none;">
+                <div class="link-box">
+
+                    <h4>友情链接</h4>
+                    <a class="add_item_img" href="javascript:void(0)"><img src="./icons/add_item.png" width="20px"></a>
+                    <div class="link-table">
+                        <ul>
+                            <li>
+                                <a>西南民族大学</a>
+                                <a class="item-delete">X</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                                <a class="item-delete">X</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                                <a class="item-delete">X</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                                <a class="item-delete">X</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                                <a class="item-delete">X</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                                <a class="item-delete">X</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                                <a class="item-delete">X</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                                <a class="item-delete">X</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                                <a class="item-delete">X</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                                <a class="item-delete">X</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                                <a class="item-delete">X</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                                <a class="item-delete">X</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                                <a class="item-delete">X</a>
+                            </li>
+                            <li>
+                                <a>西南民族大学</a>
+                                <a class="item-delete">X</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    </div>
+    <!--添加项目弹窗-->
+    <div id="HBox6" style="display: none;">
+             <div class="content-box additem-content" id="modal-content">
+                    <h4>添加项目</h4>
+                    <div class="content-table additem-table">
+                    	<form action="" method="post">
+                        <ul>
+                                <li>
+                                    <a style="width: 100px;text-align:center">名称：</a>
+                                    <input type="text" name="itemname">
+                                </li>
+                                <li>
+                                    <a style="width: 100px;text-align:center">内容：</a>
+                                    <input type="text" name="itemcontent">
+                                </li>
+                                <li style="text-align: center;">
+                                    <input type="submit" value="确定" class="submitBtn">
+                                </li>
+                        </ul>
+                        </form>
+                    </div>
+                </div>      
+    </div>
+</body>
+<script type="text/javascript" src="./js/common.js"></script>
+</html>

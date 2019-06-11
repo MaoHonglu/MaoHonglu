@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>院系风采图片展示</title>
+		<link rel="stylesheet" type="text/css" href="./css/edit_common.css">
+		<script type="text/javascript" src="./js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="./js/edit_index.js"></script>
+</head>
+<style>
+	body {
+		width: 1100px;
+		margin: 0 auto;
+		font-size: 16px;
+		background:#ECECEC;
+	}
+	a{text-decoration:none;}
+	.detail {background-color: rgb(234,241,255); text-align:center;		position:relative; margin-top:50px;}
+	.detail img{position:relative; left:-20px; top:25px;}
+	.detail span {
+		line-height: 70px;
+		font-size:24px;
+		color:#00F;
+		font-weight:900;
+	}
+	.content {padding: 20px 0;}
+	table{background:#FFF;border: 1px solid #E6E6E6;}
+	td,th{height:50px; text-align:center;border-bottom:thin #999 solid;}
+	th{background:rgb(234,241,255);}
+	td a{
+		border:thin #999 solid;
+		border-radius:5px;
+		padding:5px;
+		color:#000;
+		}
+	td a:hover{background:#E5E5E5;}
+	.selectpage{text-align:center; margin-top:20px;}
+	.selectpage a{margin: auto 20px;}
+</style>
+</head>
+
+<body>
+    <div>
+			<div class="detail"><span>院系风采图片展示</span><img class="titleEditbtn fr" onclick="upload(0,'fl')" src="./icons/edit.gif" />
+</div>
+			<div class="content">
+				 <table width="1100" border="0" cellspacing="0">
+					<tr>
+						<th scope="col">序号</th>
+						<th scope="col">图片名字</th>
+						<th scope="col">上传时间</th>
+						<th scope="col">尺寸</th>
+						<th scope="col">大小</th>
+						<th scope="col">操作</th>
+					</tr>
+					<tr>
+						<th scope="row">1</th>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><a href="javascript:void(0);" style="button">删除</a></td>
+					</tr>
+					<tr>
+						<th scope="row">2</th>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th scope="row">3</th>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th scope="row">4</th>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th scope="row">5</th>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th scope="row">6</th>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th scope="row">7</th>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th scope="row">8</th>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th scope="row">9</th>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th scope="row">10</th>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+				</table>
+				<div class="selectpage">
+					<a href="javascript:void(0);"> << </a>
+					<a href="javascript:void(0);"> 1 </a>
+					<a href="javascript:void(0);"> 2 </a>
+					<a href="javascript:void(0);"> 3 </a>
+					<a href="javascript:void(0);"> 4 </a>
+					<a href="javascript:void(0);"> 5 </a>
+					<a href="javascript:void(0);"> >> </a>
+				</div>
+     </div>
+   </div>
+<!--院系风采样式-->
+<div class="parentBox margin-auto"  id="upBox_fl" style="display: none; top:50px;">
+    <div class="pbTitle">
+			<span class="pbtName fl">院系风采</span>
+			<span class="pbtClose fr" onclick="closeBox('fl')"></span>
+    </div>
+    <div class="pbContent bd-t-gray-2 bd-b-gray-2">
+			<div class="pbcLeft fl">
+				<div onclick="upFile('fl')"><img src="./img/picdemo.jpg" width="200px" /></div>
+				<span>建议尺寸 900*不限</span>
+			</div>
+			<div class="pbcRight">
+				<form enctype="multipart/form-data" action="" method="post" id="fl">
+					<input hidden="true" name="which" id="upnum_fl" />
+					<input hidden="true" type="file" onchange="addFiles('#upfile_fl')" multiple name="paper[]" id="upfile_fl" />
+				</form>
+				<br />
+				已经选择<span id="num_fl">0</span>张
+			</div>
+    </div>
+    <div class="pbFooter">
+			<div onclick="closeBox('fl')" class="cancelBtn fl">取&nbsp;&nbsp;消</div>
+			<div onclick="$('#fl').submit();" class="submitBtn fr">确&nbsp;&nbsp;定</div>
+    </div>
+</div>
+<script>
+var num = 0;
+function addFiles(id) {
+    var file = $(id).prop('files');
+    num = num + file.length;
+    if (num > 20) {
+        alert("最大只可上传20个文件，请重新上传");
+        location.reload();
+    }
+    $('#num_fl').text(num);
+}
+
+</script>
+
+</body>
+
+</html>

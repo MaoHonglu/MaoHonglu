@@ -1,0 +1,542 @@
+﻿.info__img {
+    margin: 0 auto;
+    width: 1100px;
+    height: 140px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.guide {
+    width: 1100px;
+    margin: 10px auto;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.info {
+    width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.mainMenuBarAnchor {
+    height: 0px;
+}
+
+.info__menu {
+    width: 1030px;
+    padding-left: 70px;
+    height: 50px;
+    background-color: rgb(234, 241, 255);
+}
+
+.info__menu::before {
+    position: absolute;
+    content: '';
+    display: block;
+    left: 50px;
+    top: 19px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #1b3599;
+}
+
+.info__menu>a {
+    margin-left: 5px;
+    text-align: center;
+    display: inline-block;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 70px;
+    height: 20px;
+}
+
+.info__menu>a.info__menu__item-active {
+    color: #ff7539;
+}
+
+.info__list {
+    width: 1100px;
+}
+
+.info__list p {
+    font-size: 16px;
+    text-indent: 2em;
+    line-height: 22px;
+    margin: 10px;
+}
+
+.info__list .info__title {
+    padding-top: 30px;
+    position: relative;
+}
+.news__content{
+    padding-top: 20px;
+}
+/*学生组织下面的这个有点特殊*/
+#student__org .news__content{
+    padding-top: 0;
+}
+.title-box {
+    border-left: 10px solid rgb(227, 240, 255);
+    margin: 20px 0;
+}
+.party-box{
+    border-color: rgb(196,5,30);
+}
+
+.title-box h4 {
+    display: inline-block;
+    padding: 0 10px;
+    /* width: 120px; */
+    height: 30px;
+    line-height: 30px;
+    letter-spacing: 3px;
+    color: rgb(89, 87, 87);
+    border-top: 1px solid rgb(227, 227, 227);
+    border-right: 1px solid rgb(227, 227, 227);
+    border-bottom: 1px solid rgb(227, 227, 227);
+}
+
+.info__title::after {
+    margin-top: 12px;
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #cacaca;
+}
+
+.party__info__title::after {
+    background-color: #FF7256;
+}
+
+
+.info__title h4 {
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    left: 10px;
+    color: rgb(89, 87, 87);
+}
+
+.position__content ul {
+    list-style: none;
+    margin-left: 60px;
+
+}
+
+.position__content ul li {
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    margin: 5px 0;
+}
+
+/*班级团支部*/
+ul.grade-party li{
+    clear: both;
+}
+.class__party__info{
+    margin-left:50px!important;
+}
+.class__party__info ul{
+    margin-top:10px;
+    float: left;
+    margin:10px;
+    width: 220px;
+    height: 110px;
+    padding: 15px 0;
+    border:2px solid #F2F2F2;
+    background-color: #F7F7F7;
+}
+.class__party__info ul li{
+    height: 16px;
+    line-height: 16px;
+}
+.class__party__info ul li a.position{
+    width: 65px!important;
+    margin-left: 10px; 
+}
+
+.position__content ul li a.position {
+    font-weight: bold;
+    display: inline-block;
+    width: 50px;
+    color: rgb(89, 87, 87);
+}
+
+.position__content ul li a.person {
+    padding: 0 20px;
+    color: rgb(89, 87, 87);
+}
+
+.news__content>ul {
+    list-style: none;
+}
+
+.news__content>ul>li {
+    height: 32px;
+    line-height: 32px;
+    position: relative;
+    margin: 5px 0;
+    transition: all .3s;
+}
+
+.news__content>ul>li:hover {
+    background: rgb(234, 241, 255);
+    border-left: 5px solid #1b3599;
+   
+}
+
+.news__content>ul>li>span.news__title {
+    float: left;
+    width: 85%;
+}
+.news__content>ul>li>span.news__date {
+    color: rgb(89, 87, 87);
+    width: 13%;
+}
+
+.news__content>ul>li>img {
+    float: left;
+}
+
+.news__content>ul>li>span.news__title>a {
+    color: rgb(89, 87, 87);
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.news__content>ul>li>span.news__title::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgb(239, 239, 239);
+}
+
+
+/*teacher-Info*/
+
+.teacher__info__list .teacher__info__box {
+    position: relative;
+    overflow: hidden;
+}
+
+.teacher__info__list .teacher__info__box>a {
+    display: inline-block;
+    border: 14px solid transparent;
+    border-left: 20px solid #87CEFA;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left:1050px;
+    top: 25px;
+    transition: .2s;
+}
+
+.teacher__info__list .teacher__info__box>a:hover {
+    border-left-color: rgb(2, 76, 143);
+}
+
+.teacher__info__list .teacher__info__box>a.teacher__info-prev {
+    transform: rotate(180deg);
+    left: 1000px;
+    top: 25px;
+}
+
+ul.teacherlist {
+    padding-top: 5px;
+}
+ul.teacherlist img{
+    width: 90px;
+    height: 100px;
+}
+.teacher-box{
+    height: 320px;
+    overflow: hidden;
+    margin:0 auto;
+    transition: all .5s ease-in-out;
+}
+.teacher__info__box .teacher-box ul li {
+    float: left;
+    padding: 16px 0 16px 16px;
+    border: 1px solid rgb(241, 241, 241);
+    margin:0 10px;
+    margin-bottom: 25px;
+    transition: .3s;
+}
+
+.teacher__info__box>.teacher-box>ul li:hover {
+    box-shadow: 0 2px 5px 0 rgba(5, 10, 20, .3);
+    transition: .3s;
+    background-color: rgba(245, 245, 245, .2);
+}
+
+.teacher__info__box>.teacher-box>ul li>div {
+    position: relative;
+    width: 310px;
+}
+
+.teacher__info__box>.teacher-box>ul li>div>h4 {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+}
+
+.teacher__info__box>.teacher-box>ul li>div>h5 {
+    position: absolute;
+    top: 40px;
+    left: 100px;
+}
+
+.teacher__info__box>.teacher-box>ul li>div>span {
+    position: absolute;
+    display: inline-block;
+    height: 40px;
+    line-height: 20px;
+    width: 220px;
+    left: 100px;
+    top: 60px;
+    overflow: hidden;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+}
+
+
+/*leader_info*/
+
+.leader__info__list>h2 {
+    color: rgb(89, 87, 87);
+    margin: 20px;
+}
+
+.leader__info__list>table {
+    width: 100%;
+    text-align: center;
+}
+
+.leader__info__list>table tr {
+    background-color: rgb(226, 226, 226);
+    width: 100%;
+    height: 80px;
+}
+
+.leader__info__list>table tr {
+    background-color: rgb(226, 226, 226);
+    width: 100%;
+    height: 80px;
+    margin: 5px 0;
+    color: rgb(89, 87, 87);
+}
+
+.leader__info__list>table tr td a {
+    color: rgb(89, 87, 87);
+}
+
+.leader__info__list>table tr td a:hover {
+    color: #ff7539;
+}
+
+.leader__info__list>table tr td.leader-title {
+    width: 20%;
+    font-size: 18px;
+}
+
+.leader__info__list>table tr td.leader-name {
+    width: 20%;
+    font-size: 16px;
+}
+
+.leader__info__list>table tr td.leader-desc {
+    width: 60%;
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+
+/*more_info*/
+
+.more__info__list>ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.more__info__list>ul>li {
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+}
+
+.more__info__list>ul>li:hover {
+    background: rgb(234, 241, 255);
+    border-left: 3px solid #1b3599;
+}
+
+.more__info__list>ul>li>span.notice__title::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgb(239, 239, 239);
+}
+
+.more__info__list>ul>li>span.notice__title {
+    float: left;
+    width: 70%;
+}
+
+.more__info__list>ul>li>span.notice__title>a {
+    color: #525252;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.more__info__list>ul>li>span.notice__date {
+    color: #525252;
+    float: right;
+}
+
+
+/*信息工程学院机构展示*/
+
+.info__list .wrapper {
+    text-align: center;
+    height: 550px;
+}
+
+.info__list .wrapper .faculty__org-title h4 {
+    margin: 0 auto;
+    font-size: 18px;
+    color: #1b3599;
+    letter-spacing: 2px;
+}
+
+.info__list .wrapper .faculty__org-photo .photo-level-1 {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.info__list .wrapper .faculty__org-photo .photo-level-2 {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.info__list .wrapper .faculty__org-photo .photo-level-1 .photo-item,
+.info__list .wrapper .faculty__org-photo .photo-level-2 .photo-item {
+    float: left;
+    width: 70px;
+    height: 180px;
+    margin: 10px 15px;
+    background-color: rgb(234, 241, 255);
+    transition: .3s;
+}
+
+.info__list .wrapper .faculty__org-photo .photo-level-1 .photo-item:hover,
+.info__list .wrapper .faculty__org-photo .photo-level-2 .photo-item:hover {
+    box-shadow: 0 2px 8px 0 rgba(7, 17, 27, .3);
+}
+
+.info__list .wrapper .faculty__org-photo .arrow-down {
+    clear: both;
+}
+
+.info__list .wrapper .faculty__org-photo .photo-level-1 .photo-item a,
+.info__list .wrapper .faculty__org-photo .photo-level-2 .photo-item a {
+    display: inline-block;
+    width: 10px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.orgpannel{
+    position: relative;
+}
+.orgpannel .returnimg{
+    position: absolute;
+    display: inline-block;
+    right: 40px;
+    top: -5px;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+}
+
+/*团委、学生会成员展示页面*/
+
+
+.title-box>a {
+    padding: 0 5px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-right: 10px solid rgb(227, 240, 255);
+}
+
+/*下载专区*/
+.searchInput{
+    width: 200px;
+    height: 28px;
+    border: 1px solid #A9A9A9;
+    border-radius:10px; 
+    outline: none;
+    padding-left: 10px;
+    margin-left: 800px;
+}
+#download_file h4{
+    top: 0;
+}
+.download__file ul li{
+    clear: both;
+    margin:20px auto;
+}
+.download__file ul li:hover{
+    border: none;
+    transition: .5s;
+}
+.download__file ul li p{
+    float: left;
+    line-height: 30px;
+    margin:0;
+}
+.download__file ul li p.file-title{
+    width: 500px;
+    height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.download__file ul li p.file-info{
+    margin-left: 10px;
+}
+.download__file ul li a.download_link{
+    float: right;
+    margin-right: 80px;
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    background-color: #F2F2F2;
+    transition: .5s;
+}
+.download__file ul li a.download_link:hover{
+    background-color: #e5e5e5;
+}

@@ -1,0 +1,352 @@
+@charset "utf-8";
+/* CSS Document */
+
+a {
+    color: #612f24;
+}
+
+.fl {
+    display:inline-block;
+}
+
+.fr {
+    float: right;
+}
+
+.bd-l-gray-2 {
+    border-left:1px solid #ebebeb;
+}
+
+.bd-r-gray-2 {
+    border-right: 1px solid #ebebeb;
+}
+
+.bd-t-gray-2 {
+    border-top:1px solid #ebebeb;
+}
+
+.bd-b-gray-2 {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.bd-l-gray {
+    border-left:1px solid #eaeaea;
+}
+
+.bd-r-gray {
+    border-right: 1px solid #eaeaea;
+}
+
+.bd-t-gray {
+    border-top:1px solid #eaeaea;
+}
+
+.bd-b-gray {
+    border-bottom: 1px solid #eaeaea;
+}
+.cur-p{ cursor: pointer; border:thin #FFF solid; border-radius:5px; background:#F2F2F2; margin:0 auto;
+    width: 100px;}
+
+.changeimg{
+    font-size:24px;cursor: pointer; width:100px;}
+
+.margin-auto {
+    margin: 0 auto;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+
+img {
+    border: 0;
+}
+
+
+/*-------------瀵硅瘽妗嗘牱寮�------------*/
+.parentBox {
+    width: 600px;
+    position: fixed;
+    top: 150px;
+    left: 1px;
+    right: 1px;
+        background:#C6E7F7;
+        padding:10px;
+}
+
+.pbTitle, .pbContent, .pbFooter {
+    width: 100%;
+}
+
+.pbTitle {
+    height: 65px;
+    background:#C6E7F7;
+}
+
+.pbTitle span {
+    display: inline-block;
+}
+
+.pbTitle .pbtClose {
+    height: 40px;
+    width: 40px;
+    margin-top: 13px;
+    background: url(../icons/close.png) center center no-repeat;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.pbTitle .pbtName {
+    line-height: 65px;
+    margin-left: 30px;
+    color: #434343;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.pbContent {
+    padding: 10px 0;
+    background: #fff;
+    overflow: hidden;
+    color: #afafaf;
+}
+.pbContent .pbcbContent{ width:500px; margin:0 auto;}
+.pbContent .pbcbContent textarea{ 
+    width:480px; 
+    height: 334px; 
+    padding:8px 10px;
+    box-shadow: 1px 2px 1px #d1d1d1 inset;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+}
+
+.pbContent .pbcLeft, .pbcRight {
+    text-align: center;
+}
+
+.pbContent .pbcLeft {
+    width: 200px;
+    margin: 15px 10px 15px 40px;
+}
+
+.pbContent span {
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.pbContent .pbcRight {
+    width: 290px;
+    margin: 15px 40px 15px 15px;
+        margin:0 auto;
+        margin-right: 30px;
+}
+
+.pbContent .pbcRight input {
+    width: 230px;
+    box-shadow: 1px 2px 1px #d1d1d1 inset;
+    height: 25px;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+
+}
+
+.pbContent .pbcRight hr {
+    border: 1px solid #eeeeee;
+}
+
+.pbFooter {
+    box-shadow: 0 2px 2px #ccc;
+    height: 60px;
+    background:#fff;
+}
+
+.pbFooter .cancelBtn, .submitBtn {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+.pbFooter .cancelBtn {
+    border: 1px solid #dedede;
+    margin-left: 24px;
+    color: #afafaf;
+    background: url(./../img/cancelBtn.png) repeat-x;
+}
+
+.pbFooter .submitBtn {
+    border: 1px solid #5178d2;
+    margin-right: 24px;
+    color: #fff;
+    background: url(./../img/submitBtn.png) repeat-x;
+}
+
+
+.shangchuanpic{
+    width: 1100px;
+        margin:0 auto;
+        text-align:center;
+
+} 
+.box-pic{
+    width: 180px;
+    height: 120px ;
+    margin: 20px 0;
+    background:#CCC;
+    border: 1px solid #E7E7E7;
+        border-radius:10px;
+    padding: 10px 15px ;
+
+    /*overflow: hidden;*/
+}
+.box-pic p{
+    text-align: center;
+}
+.box-pic p:first-child{
+    text-align: right;
+}
+.box-pic .big-number{
+    font-size: 35px ;
+    color:#999;
+}
+
+.box-pic .small-size{
+    font-size: 12px ;
+}
+
+.mbutton{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #CCC;
+    width: 75px;
+    margin: 0 auto;
+    padding: 0px 1px 1px 1px;
+    background:#FFF;
+    }
+.box-pic .mbutton:hover{ background: #ebebeb; color:#612f24;}
+.box-pic:last-child{
+    margin-right: 0px ;
+}
+.bordert-none{
+    border-top:none;
+    padding: 0 15px ;
+}
+
+.container{
+    width: 1200px;
+    /*border: 1px solid red;*/
+    overflow: hidden;
+        margin:0 auto;
+}
+
+
+<!--编辑加的css样式-->
+.notice__content ul li:hover,
+.notice__content ul li:hover,
+.education__content ul>li:hover,
+.science__content ul li:hover,
+.news__content ul li:hover,
+.party__content ul li:hover
+{
+    background-color:inherit;
+    border-left:none;
+    transition:none;
+}
+.faculty__news_add,
+.faculty__notice_add,
+.faculty__science_add,
+.faculty__education_add,
+.faculty__show_add
+{
+    vertical-align: sub;
+    cursor:pointer;
+    padding-left: 20px;
+    }
+.qualified_teach_edit{
+    position:relative;
+    cursor:pointer;
+    left: 35px;
+    bottom: -3px;
+    }
+.more__news_add{
+    position:absolute;
+    cursor:pointer;
+    right:20px;
+    top:15px;}
+.notice__content>ul>li>span.notice__delete a,
+.education__content>ul>li>span.education__delete a,
+.science__content>ul>li>span.science__delete a,
+.notice__delete a,
+.news__delete a,
+.activities__delete a,
+.party__delete a{
+    color: #F00;
+    float: right;
+}
+.titleEditbtn{
+    position:absolute;
+    left:130px;
+    cursor:pointer;
+}
+/*后台-院系介绍*/
+.yuanxieContent{width:1170px; margin:10px 15px;}
+.change-teachersSight {
+    width: 1100px;
+    height: 220px;
+    border: 1px solid #F5F5F5;
+    margin: 0 auto;
+        background:#CCC;
+        margin-bottom:10px;
+        margin-top:10px;
+}
+.change-teachersSight p{
+    margin-top: 30px ;
+    line-height: 20px ;
+    text-align: center;
+    color: #CCC;
+
+}
+.change-teachersSight p:last-child{
+    border: 1px solid #CCC;
+    width: 200px;
+    padding: 15px ;
+    margin: 0  auto;
+    margin-top:70px;
+    border-radius: 10px ;
+    background:#F2F2F2;
+}
+.change-teachersSight p:last-child:hover{ background: #ebebeb; color:#612f24;}
+.teachersTitle .edit img{
+    width:20px ;
+    margin-right: 20px ;
+    margin-top: 10px ;
+}
+.stu{
+    position:relative;
+    left:20px;
+    cursor:pointer;
+}
+.teacher-edit {
+    position: absolute;
+    top: -6px;
+    right: 52px;
+    color: #1e00ff;
+}
+.teacher-delete {
+    position: absolute;
+    top: -6px;
+    right: 10px;
+    color: #FF0000;
+}
